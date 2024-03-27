@@ -7,7 +7,7 @@
 namespace keyinvoicesync\API;
 
 
-class Wpress
+class WPress
 {
     public $admin_pages = array();
     public $admin_subpages = array();

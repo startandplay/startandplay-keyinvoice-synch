@@ -6,12 +6,11 @@
 
 namespace keyinvoicesync\Admin;
 
-use keyinvoicesync\API\Wpress;
+use keyinvoicesync\API\WPress;
 use keyinvoicesync\API\callbacks\WpCallbacks;
 
 class Pages
 {
-
     public $wpress_api;
     public $callback;
     public $pages = array();

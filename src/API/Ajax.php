@@ -15,11 +15,11 @@ use keyinvoicesync\API\Middleware\KeyInvoiceApiConnection;
 class Ajax
 {
 	public $actions = [];
-	public $wp;
+	public $wpress;
 
 	public function register()
 	{
-		$this->wp = new WPress();
+		$this->wpress = new WPress();
 		$this->actions = [
 			'test_api' => 'testAjax',
 			'synch_products' => 'synchProducts',
@@ -91,7 +91,7 @@ class Ajax
 						$price = number_format($price_plus_tax, 2, '.', ''); // round price with two decimal places
 					}
 
-					$this->wp->updateProduct([
+					$this->wpress->updateProduct([
 						'sku'                => $product->Ref,
 						'name'               => $product->Name,
 						'regular_price'      => $price,
