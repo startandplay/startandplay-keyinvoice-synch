@@ -67,10 +67,6 @@ class Ajax
 		// $data = $this->loadDataFromKeyinvoiceApiFile();
 		// error_log(print_r($data, true));
 
-		// $filename = dirname(__FILE__) . '\\' . date("YmdHis") . ".json";
-		// $file = glob(dirname(__FILE__) . '\20240318171234.json');
-		// error_log(print_r(dirname(__FILE__) . '\20240318171234.json', true));
-
 		if ($apiManager->isTransientDateExpire()) {
 
 			$apiManager->saveTimestampTransientDate();
@@ -84,7 +80,7 @@ class Ajax
 			if (isset($productsData)) {
 
 				//save data into a file 
-				$apiManager->createKeyinvoiceApiDataFile($productsData);
+				// $apiManager->createKeyinvoiceApiDataFile($productsData);
 
 				foreach ($productsData as $product) {
 
