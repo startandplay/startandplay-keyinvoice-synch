@@ -4,7 +4,7 @@ Plugin Name: Keyinvoice Synchronization
 Plugin URI:startandplay.com
 Description: Keyinvoice products data synchronization
 Author: Nuno Alves
-Version: 1.0
+Version: 1.0.1
 Licence: GPL3
 */
 
